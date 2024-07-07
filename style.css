@@ -235,6 +235,11 @@ a {
 /* today is work on media-quarry (@media) */
 
 @media (min-width: 1024px) {
+
+    .container{
+        min-height: 90svh;
+    }
+
     .main {
         width: 100%;
         max-width: 800px;
