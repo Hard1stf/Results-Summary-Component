@@ -36,7 +36,8 @@ body {
 
 .container {
     /* min-height: 100vh; */
-    min-height: 90svh;
+    min-height: 838px;
+    /* min-height: 90svh; */
     display: flex;
     justify-content: center;
     align-items: center;
