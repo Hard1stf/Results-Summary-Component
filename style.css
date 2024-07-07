@@ -237,7 +237,7 @@ a {
         width: 100%;
         max-width: 800px;
         height: 520px;
-        box-shadow: 10px 10px 10px 10px var(--Dark-gray-blue);
+        box-shadow: 11px 11px 20px 0px rgb(35 46 193 / 22%);
         flex-direction: row;
         border-radius: 40px;
     }
