@@ -36,7 +36,13 @@ body {
 
 .container {
     height: 100vh;
-    /* width: 100%; */
+    /* width: inherit; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -107,6 +113,10 @@ body {
     background-color: var(--White);
     padding-top: 15px;
     padding-inline: 30px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .lower h4 {
@@ -114,6 +124,7 @@ body {
     font-size: 20px;
     font-weight: 900;
     padding-bottom: 30px;
+    align-self: baseline;
 }
 
 .summary-scores {
@@ -200,26 +211,84 @@ body {
     color: var(--Cobalt-blue);
 }
 
-.button {
+a {
     width: 100%;
     margin-block: 20px;
     padding-block: 20px;
     text-align: center;
+    text-decoration: none;
     border-radius: 50px;
-    background-color: var(--Dark-gray-blue);
-    cursor: pointer;
+    background: var(--Dark-gray-blue);
+    font-size: 18px;
+    color: var(--White);
+    /* cursor: pointer; */
 }
 
-.button button {
+/* .button button {
     border: none;
     background-color: transparent;
-    color: var(--White);
-    font-size: 18px;
-    cursor: pointer;
-}
+    /* cursor: pointer; 
+} */
 
 /* today is work on media-quarry (@media) */
 
 @media (min-width: 1024px) {
+    .main {
+        width: 100%;
+        max-width: 800px;
+        height: 520px;
+        box-shadow: 10px 10px 10px 10px var(--Dark-gray-blue);
+        flex-direction: row;
+        border-radius: 40px;
+    }
+
+    .upper {
+        max-width: 400px;
+        /* Change-- max-width:380px to max-width: 400px (half of the main-div)*/
+        min-height: 520px;
+        /* Change-- min-height: 408px to min-height: 520px (full of main-div)*/
+        border-radius: 40px 40px;
+    }
+
+    .upper .top {
+        font-size: 32px;
+    }
+
+    .score {
+        width: 200px;
+        height: 200px;
+    }
+
+    .upper .middle {
+        font-size: 2rem;
+        font-weight: 600;
+        color: var(--White);
+        padding-bottom: 10px;
+    }
+
+    .upper .bottom {
+        padding-inline: 85px;
+        font-weight: 800;
+        /* new add font-weight (only here !)*/
+    }
+
+    .lower {
+        max-width: 400px;
+        min-height: 520px;
+        padding-inline: 50px;
+        border-radius: inherit;
+    }
+
+    .lower h4 {
+        font-size: 28px;
+    }
+
+    a{
+        background-color: var(--Dark-gray-blue);
+        transition: background-linear-gradient 0.5s ease-in-out;
+    }
     
+    a:hover{
+        background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    }
 }
