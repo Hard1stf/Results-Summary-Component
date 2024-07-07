@@ -36,8 +36,8 @@ body {
 
 .container {
     /* min-height: 100vh; */
-    min-height: 838px;
-    /* min-height: 90svh; */
+    /* min-height: 838px; */
+    min-height: 100svh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -126,7 +126,7 @@ body {
     color: var(--Dark-gray-blue);
     font-size: 20px;
     font-weight: 900;
-    padding-bottom: 30px;
+    padding-bottom: 1rem;
     align-self: baseline;
 }
 
